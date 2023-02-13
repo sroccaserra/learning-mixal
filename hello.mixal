@@ -3,7 +3,7 @@
 *
 * label ins     operand     comment
 TERM    EQU     19          the MIX console device number
-OSIZE   EQU     14
+OSIZE   EQU     14          Term device outputs 14x5 chars blocks (= 80 chars lines)
         ORIG    3000        start address
 START   OUT     MSG(TERM)   output data at address MSG
         HLT                 halt execution
